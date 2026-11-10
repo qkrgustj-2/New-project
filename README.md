@@ -8,6 +8,14 @@ A runnable **hourly, 24-hour wind generation forecasting model requiring no SCAD
 
 ![24-hour ensemble generation forecast](examples/forecast/forecast_overview.png)
 
+## Downloads
+
+- [Complete project ZIP](downloads/Nakasato_Wind_Forecast.zip) — code, notebook, input data, saved weather and example outputs. Open the file on GitHub and select **Download raw file**.
+- [24-hour example forecast workbook](examples/forecast/Nakasato_forecast.xlsx)
+- [Model guide PDF](reports/Nakasato_Model_Guide.pdf)
+
+The included example is dated 11 November 2026 in Japan time. Run the live command below to obtain a fresh forecast.
+
 ## Open these first
 
 - `Nakasato_Wind_Forecast.ipynb`: guided notebook with the model, charts and optional live/training cells.
