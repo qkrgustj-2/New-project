@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+runs/
+weather_archive/
+models/
+data/scada.csv

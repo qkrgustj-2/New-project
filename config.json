@@ -1,0 +1,21 @@
+{
+  "site_name": "Nakasato",
+  "display_timezone": "Asia/Tokyo",
+  "grid_export_limit_kw": 36000.0,
+  "electrical_loss_fraction": 0.0,
+  "shear_exponent": 0.14,
+  "reference_density_kgm3": 1.225,
+  "cut_in_ms": 3.0,
+  "cut_out_ms": 25.0,
+  "restart_ms": 23.0,
+  "high_wind_hysteresis": true,
+  "family_weights": {"gfs": 0.5, "ecmwf": 0.5},
+  "directional_wind_multipliers": {},
+  "notes": [
+    "Initial uncalibrated baseline. Units in original workbook are inferred: m/s, kW, kg/m3.",
+    "116.5 m hub height and 36 MW grid capacity are supported by Vena's project announcements; confirm current operating settings.",
+    "Availability=1, wind multipliers=1 and electrical losses=0 are assumptions, not fitted estimates.",
+    "Each optional directional multiplier list has 12 entries for sectors centered on 0,30,...,330 degrees (meteorological wind-from direction).",
+    "The two density tables in the uploaded workbook are identical; no density adjustment is applied."
+  ]
+}

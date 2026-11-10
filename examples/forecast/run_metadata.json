@@ -1,0 +1,131 @@
+{
+  "status": "uncalibrated_physical_ensemble",
+  "issue_time_utc": "2026-11-10T19:21:46.414871+00:00",
+  "created_at_utc": "2026-11-10T19:25:09.899596+00:00",
+  "snapshot": "weather_snapshot",
+  "n_turbines": 13,
+  "n_hours": 24,
+  "audit": {
+    "gfs": {
+      "model": "gfs_seamless",
+      "members_used": 31,
+      "dropped_members": [],
+      "api_reference_height_m": 100,
+      "distinct_returned_grids": 1,
+      "distinct_site_wind_trajectories": 1
+    },
+    "ecmwf": {
+      "model": "ecmwf_ifs025",
+      "members_used": 51,
+      "dropped_members": [],
+      "api_reference_height_m": 100,
+      "distinct_returned_grids": 1,
+      "distinct_site_wind_trajectories": 1
+    },
+    "jma": {
+      "model": "jma_msm",
+      "members_used": 1,
+      "dropped_members": [],
+      "api_reference_height_m": 10,
+      "distinct_returned_grids": 1,
+      "distinct_site_wind_trajectories": 1
+    }
+  },
+  "config": {
+    "site_name": "Nakasato",
+    "display_timezone": "Asia/Tokyo",
+    "grid_export_limit_kw": 36000.0,
+    "electrical_loss_fraction": 0.0,
+    "shear_exponent": 0.14,
+    "reference_density_kgm3": 1.225,
+    "cut_in_ms": 3.0,
+    "cut_out_ms": 25.0,
+    "restart_ms": 23.0,
+    "high_wind_hysteresis": true,
+    "family_weights": {
+      "gfs": 0.5,
+      "ecmwf": 0.5
+    },
+    "directional_wind_multipliers": {},
+    "notes": [
+      "Initial uncalibrated baseline. Units in original workbook are inferred: m/s, kW, kg/m3.",
+      "116.5 m hub height and 36 MW grid capacity are supported by Vena's project announcements; confirm current operating settings.",
+      "Availability=1, wind multipliers=1 and electrical losses=0 are assumptions, not fitted estimates.",
+      "Each optional directional multiplier list has 12 entries for sectors centered on 0,30,...,330 degrees (meteorological wind-from direction).",
+      "The two density tables in the uploaded workbook are identical; no density adjustment is applied."
+    ]
+  },
+  "input_hashes": {
+    "config.json": "713f58ff902ad4b2d11461f8b1849c63092e89f67277728645358dbc48095146",
+    "data/turbines.csv": "268e43c36194c0801e4a43a31bb5fd92c60102a757a6a6cc907d438e5607329f",
+    "data/power_curve.csv": "83ff8b15c56e2e91c8f96fdbf41668dc47edd56b81b3ee38688238cb0b4bff7a"
+  },
+  "snapshot_manifest": {
+    "requested_start_utc": "2026-11-10T20:00:00+00:00",
+    "hours": 24,
+    "nwp_initialization_time_utc": null,
+    "issue_time_definition": "Time all required latest API responses had been retrieved; NWP run initializations are not supplied by these responses.",
+    "turbine_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "sources": {
+      "gfs": {
+        "endpoint": "https://ensemble-api.open-meteo.com/v1/ensemble",
+        "model": "gfs_seamless",
+        "height": 100,
+        "request_url": "https://ensemble-api.open-meteo.com/v1/ensemble?latitude=41.0019078%2C40.993257%2C40.9999561%2C40.9975794%2C40.9957147%2C40.9890041%2C40.9870875%2C40.9840007%2C40.9862754%2C40.982154%2C40.9767402%2C40.9789735%2C40.9818466&longitude=140.4682475%2C140.4522192%2C140.463079%2C140.4576171%2C140.4576205%2C140.4615629%2C140.4620184%2C140.4607477%2C140.4483896%2C140.460739%2C140.4550183%2C140.4529674%2C140.4509585&hourly=wind_speed_100m%2Cwind_direction_100m&models=gfs_seamless&wind_speed_unit=ms&timezone=GMT&start_hour=2026-11-10T20%3A00&end_hour=2026-11-11T19%3A00&cell_selection=land",
+        "response_sha256": "be40b8476b2651e85904aefd3dbe8731e2d6c9c366aef7c6d649758696e2e443",
+        "saved_payload_sha256": "e03a9374037e8637f73054ada5a055b103bb3cba98ee9fd78c31234ba50ae5fa",
+        "fetched_at_utc": "2026-11-10T19:21:45.155867+00:00"
+      },
+      "ecmwf": {
+        "endpoint": "https://ensemble-api.open-meteo.com/v1/ensemble",
+        "model": "ecmwf_ifs025",
+        "height": 100,
+        "request_url": "https://ensemble-api.open-meteo.com/v1/ensemble?latitude=41.0019078%2C40.993257%2C40.9999561%2C40.9975794%2C40.9957147%2C40.9890041%2C40.9870875%2C40.9840007%2C40.9862754%2C40.982154%2C40.9767402%2C40.9789735%2C40.9818466&longitude=140.4682475%2C140.4522192%2C140.463079%2C140.4576171%2C140.4576205%2C140.4615629%2C140.4620184%2C140.4607477%2C140.4483896%2C140.460739%2C140.4550183%2C140.4529674%2C140.4509585&hourly=wind_speed_100m%2Cwind_direction_100m&models=ecmwf_ifs025&wind_speed_unit=ms&timezone=GMT&start_hour=2026-11-10T20%3A00&end_hour=2026-11-11T19%3A00&cell_selection=land",
+        "response_sha256": "61a1c844f58cb99a15c96e20e85fbfa17330cf140e45ced0b93ed7f3670b4fff",
+        "saved_payload_sha256": "d13abf663aa82a85e72be9d8f16eab01782d031daacb4f00f74656c9b2b73658",
+        "fetched_at_utc": "2026-11-10T19:21:45.556378+00:00"
+      },
+      "jma": {
+        "endpoint": "https://api.open-meteo.com/v1/jma",
+        "model": "jma_msm",
+        "height": 10,
+        "request_url": "https://api.open-meteo.com/v1/jma?latitude=41.0019078%2C40.993257%2C40.9999561%2C40.9975794%2C40.9957147%2C40.9890041%2C40.9870875%2C40.9840007%2C40.9862754%2C40.982154%2C40.9767402%2C40.9789735%2C40.9818466&longitude=140.4682475%2C140.4522192%2C140.463079%2C140.4576171%2C140.4576205%2C140.4615629%2C140.4620184%2C140.4607477%2C140.4483896%2C140.460739%2C140.4550183%2C140.4529674%2C140.4509585&hourly=wind_speed_10m%2Cwind_direction_10m&models=jma_msm&wind_speed_unit=ms&timezone=GMT&start_hour=2026-11-10T20%3A00&end_hour=2026-11-11T19%3A00&cell_selection=land",
+        "response_sha256": "ab18512b48c19ae7e81f5fe916de16661d5bc6f0c2b287faf7c9bf4a34925a69",
+        "saved_payload_sha256": "6e270b830c0aa3e75e499424a688d9b06e9c32301a19aeb37d60b759ae464b56",
+        "fetched_at_utc": "2026-11-10T19:21:46.414794+00:00"
+      }
+    },
+    "optional_errors": {},
+    "issue_time_utc": "2026-11-10T19:21:46.414871+00:00"
+  },
+  "assumptions": {
+    "status": "Uncalibrated physical/weather ensemble; no SCADA training or empirical accuracy claim.",
+    "target": "Per-turbine generation potential and operation-conditioned power; farm grid export after scenario aggregation/cap.",
+    "quantiles": "Q10/Q50/Q90 are lower/median/upper CDF quantiles; raw weather spread, not validated prediction intervals or exceedance P-values.",
+    "energy": "hourly_energy_proxy_kwh assumes each instantaneous mapped power sample represents one hour; it is not metered energy.",
+    "wind_height": "API 100 m winds adjusted to 116.5 m with alpha=0.14. JMA uses 10 m and is benchmark only.",
+    "density": "Fixed reference curve at 1.225 kg/m3; original units inferred and density tables identical. No density correction.",
+    "loss_assumptions": "Availability=1, wind multipliers=1, electrical loss=0 by default; no calibrated wake/terrain/icing model.",
+    "shutdown": "25.0 m/s generates per workbook; >25 shuts down; <=23 restarts if hysteresis enabled. Initial state running assumed.",
+    "point_estimate": "Mean of scenario power. Each family has equal weight, each complete member equal within family.",
+    "spatial_dependence": "Same family/member used simultaneously across every turbine. Sum scenarios, cap, then summarize.",
+    "time": "Stored in UTC, displayed in Asia/Tokyo; issue time is retrieval completion, not NWP run initialization.",
+    "JMA availability": "JMA MSM has a shorter horizon; benchmark may omit hours. It is excluded from ensemble weights."
+  },
+  "historical_generation_supplied": false,
+  "empirical_accuracy_metrics": null
+}

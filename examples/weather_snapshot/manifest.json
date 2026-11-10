@@ -1,0 +1,52 @@
+{
+  "requested_start_utc": "2026-11-10T20:00:00+00:00",
+  "hours": 24,
+  "nwp_initialization_time_utc": null,
+  "issue_time_definition": "Time all required latest API responses had been retrieved; NWP run initializations are not supplied by these responses.",
+  "turbine_ids": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13"
+  ],
+  "sources": {
+    "gfs": {
+      "endpoint": "https://ensemble-api.open-meteo.com/v1/ensemble",
+      "model": "gfs_seamless",
+      "height": 100,
+      "request_url": "https://ensemble-api.open-meteo.com/v1/ensemble?latitude=41.0019078%2C40.993257%2C40.9999561%2C40.9975794%2C40.9957147%2C40.9890041%2C40.9870875%2C40.9840007%2C40.9862754%2C40.982154%2C40.9767402%2C40.9789735%2C40.9818466&longitude=140.4682475%2C140.4522192%2C140.463079%2C140.4576171%2C140.4576205%2C140.4615629%2C140.4620184%2C140.4607477%2C140.4483896%2C140.460739%2C140.4550183%2C140.4529674%2C140.4509585&hourly=wind_speed_100m%2Cwind_direction_100m&models=gfs_seamless&wind_speed_unit=ms&timezone=GMT&start_hour=2026-11-10T20%3A00&end_hour=2026-11-11T19%3A00&cell_selection=land",
+      "response_sha256": "be40b8476b2651e85904aefd3dbe8731e2d6c9c366aef7c6d649758696e2e443",
+      "saved_payload_sha256": "e03a9374037e8637f73054ada5a055b103bb3cba98ee9fd78c31234ba50ae5fa",
+      "fetched_at_utc": "2026-11-10T19:21:45.155867+00:00"
+    },
+    "ecmwf": {
+      "endpoint": "https://ensemble-api.open-meteo.com/v1/ensemble",
+      "model": "ecmwf_ifs025",
+      "height": 100,
+      "request_url": "https://ensemble-api.open-meteo.com/v1/ensemble?latitude=41.0019078%2C40.993257%2C40.9999561%2C40.9975794%2C40.9957147%2C40.9890041%2C40.9870875%2C40.9840007%2C40.9862754%2C40.982154%2C40.9767402%2C40.9789735%2C40.9818466&longitude=140.4682475%2C140.4522192%2C140.463079%2C140.4576171%2C140.4576205%2C140.4615629%2C140.4620184%2C140.4607477%2C140.4483896%2C140.460739%2C140.4550183%2C140.4529674%2C140.4509585&hourly=wind_speed_100m%2Cwind_direction_100m&models=ecmwf_ifs025&wind_speed_unit=ms&timezone=GMT&start_hour=2026-11-10T20%3A00&end_hour=2026-11-11T19%3A00&cell_selection=land",
+      "response_sha256": "61a1c844f58cb99a15c96e20e85fbfa17330cf140e45ced0b93ed7f3670b4fff",
+      "saved_payload_sha256": "d13abf663aa82a85e72be9d8f16eab01782d031daacb4f00f74656c9b2b73658",
+      "fetched_at_utc": "2026-11-10T19:21:45.556378+00:00"
+    },
+    "jma": {
+      "endpoint": "https://api.open-meteo.com/v1/jma",
+      "model": "jma_msm",
+      "height": 10,
+      "request_url": "https://api.open-meteo.com/v1/jma?latitude=41.0019078%2C40.993257%2C40.9999561%2C40.9975794%2C40.9957147%2C40.9890041%2C40.9870875%2C40.9840007%2C40.9862754%2C40.982154%2C40.9767402%2C40.9789735%2C40.9818466&longitude=140.4682475%2C140.4522192%2C140.463079%2C140.4576171%2C140.4576205%2C140.4615629%2C140.4620184%2C140.4607477%2C140.4483896%2C140.460739%2C140.4550183%2C140.4529674%2C140.4509585&hourly=wind_speed_10m%2Cwind_direction_10m&models=jma_msm&wind_speed_unit=ms&timezone=GMT&start_hour=2026-11-10T20%3A00&end_hour=2026-11-11T19%3A00&cell_selection=land",
+      "response_sha256": "ab18512b48c19ae7e81f5fe916de16661d5bc6f0c2b287faf7c9bf4a34925a69",
+      "saved_payload_sha256": "6e270b830c0aa3e75e499424a688d9b06e9c32301a19aeb37d60b759ae464b56",
+      "fetched_at_utc": "2026-11-10T19:21:46.414794+00:00"
+    }
+  },
+  "optional_errors": {},
+  "issue_time_utc": "2026-11-10T19:21:46.414871+00:00"
+}

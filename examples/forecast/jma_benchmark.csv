@@ -1,0 +1,25 @@
+issue_time_utc,valid_time_utc,family,member,gross_power_kw,available_power_kw,export_power_kw,label
+2026-11-10T19:21:46.414871+00:00,2026-11-10T20:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-10T21:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-10T22:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-10T23:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T00:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T01:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T02:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T03:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T04:00:00+00:00,jma,0,3586.502732771479,3586.502732771479,3586.502732771479,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T05:00:00+00:00,jma,0,4248.317089033285,4248.317089033285,4248.317089033285,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T06:00:00+00:00,jma,0,2798.359038349291,2798.359038349291,2798.359038349291,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T07:00:00+00:00,jma,0,625.8568045904767,625.8568045904767,625.8568045904767,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T08:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T09:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T10:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T11:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T12:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T13:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T14:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T15:00:00+00:00,jma,0,0.0,0.0,0.0,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T16:00:00+00:00,jma,0,363.8523888730029,363.8523888730029,363.8523888730029,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T17:00:00+00:00,jma,0,506.8482885639191,506.8482885639191,506.8482885639191,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T18:00:00+00:00,jma,0,316.1870889760303,316.1870889760303,316.1870889760303,JMA MSM 10 m + assumed power-law shear; benchmark only
+2026-11-10T19:21:46.414871+00:00,2026-11-11T19:00:00+00:00,jma,0,506.8482885639191,506.8482885639191,506.8482885639191,JMA MSM 10 m + assumed power-law shear; benchmark only
